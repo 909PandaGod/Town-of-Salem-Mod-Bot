@@ -25,9 +25,9 @@ client.on("message", message => {
 			.setColor("#5555FF")
 			.setTitle("Game Headcount")
 			.setDescription("React with ⚪ to join the game")
-			.setFooter("3 minutes remaining")
-		message.channel.send(gameHeadcountEmbed).then(sentMessage => {
-			sentMessage.react('⚪');
+			.setFooter("3 minutes remaining
+		var msg = message.channel.send(gameHeadcountEmbed)
+		msg.react('⚪');
 			
 			console.log("Setting times...");
 			var currTime = new Date();
